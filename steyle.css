@@ -1,0 +1,137 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+/* تنسيق الشريط */
+.top-banner {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 1px 0;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+/* حركة النص */
+.top-banner p {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrollText 10s linear infinite;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+.navbar, .footer {
+    background-color: #333;
+}
+.navbar-brand img {
+    height: 40px;
+}
+.search-bar {
+    max-width: 500px;
+    margin: auto;
+}
+.game-box {
+    background-color: #111;
+    border: 1px solid #444;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.5s ease;
+}
+
+.game-box:hover{
+    transform: scale(1.1);
+}
+
+.game-box img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.game-box p{
+    font-size: 1.1em;
+}
+
+.pris{
+    color: rgb(199, 1, 1);
+    font-size: 1.1em;
+    font-weight: 900;
+}
+
+.text-center{
+    display: flex;
+    justify-content: center;
+}
+
+.shr{
+   text-align: right;
+   font-size: 1.2em;
+}
+
+
+/* تنسيق زر الواتساب */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 49px;
+    right: 20px;
+    background-color: #25d366; /* لون زر الواتساب */
+    color: white;
+    padding: 15px 25px;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    animation: pulse 1.5s infinite;
+}
+
+.whatsapp-btn i {
+    font-size: 24px; /* حجم الأيقونة */
+}
+
+/* تأثير نبض الزر */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+.footer .social-icons i {
+    margin: 10px;
+    color: #fff;
+    font-size: 24px;
+}
